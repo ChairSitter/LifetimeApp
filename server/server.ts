@@ -1,7 +1,7 @@
 const express = require('express');
 const session = require('express-session');
 const routes = require('./routes');
-const sequelize = require('./config/connection');
+const sequelizeRename = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 // link to other file / dotenv
 
@@ -14,7 +14,7 @@ const sess = {
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
-      db: sequelize,
+      db: sequelizeRename,
     }),
   };
 
