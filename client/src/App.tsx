@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <p>lifetime app!</p>
+      <p>lifetime app!</p>
     </>
   )
 }
